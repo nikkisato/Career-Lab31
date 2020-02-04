@@ -2,8 +2,8 @@ export const getQuotes = () => {
   fetch('http://futuramaapi.herokuapp.com/api/quotes/10')
     .then(res => res.json())
     .then(([{ quote, character, image }]) => ({
-      text: quote,
+      quote: quote,
       character: character,
-      img: image
+      image: image
     }));
 };
