@@ -9,7 +9,7 @@ export const useRequest = url => {
     setLoading(true);
     fetch(url)
       .then(res => {
-        if (!res.ok) throw `Unable to fetch from ${url}: ${res.status}`;
+        if(!res.ok) throw `Unable to fetch from ${url}: ${res.status}`;
         return res.json();
       })
       .then(json => {

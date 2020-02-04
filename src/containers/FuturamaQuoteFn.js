@@ -7,7 +7,6 @@ const FuturamaQuoteFn = () => {
   const [quotes, setQuotes] = useState([]);
 
   useEffect(() => {
-    //similar to fetch
     fetchQuotes();
   }, []);
 
@@ -21,7 +20,7 @@ const FuturamaQuoteFn = () => {
   return (
     <>
       <Quotes quotes={quotes} />
-      <Button onClick={handleClick} />
+      <Button text='click here for a new one' onClick={handleClick} />
     </>
   );
 };
