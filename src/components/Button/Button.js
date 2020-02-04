@@ -1,13 +1,9 @@
-  
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useQuotes } from '../../hooks/quoteHook';
 
-const Button = ({ text, ...props }) => (
-  <button {...props}>{text}</button>
-);
-
-Button.propTypes = {
-  text: PropTypes.string.isRequired
+const Button = () => {
+  const { handleClick } = useQuotes();
+  return <button onClick={() => handleClick()}>new one</button>;
 };
 
 export default Button;
