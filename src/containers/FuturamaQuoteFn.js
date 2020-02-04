@@ -1,6 +1,5 @@
-import React, { useState, UseEffect } from 'react';
+import React, { useState } from 'react';
 import Quotes from '../components/Quote/Quotes';
-import { getQuotes } from '../services/futuramaApi';
 import Button from '../components/Button/Button';
 
 const FuturamaQuoteFn = () => {
