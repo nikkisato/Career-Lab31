@@ -5,6 +5,6 @@ export const getQuotes = () =>
       quotes.map(({ quote, character, image }) => ({
         text: quote,
         name: character,
-        image
+        img: image
       }))
     );
