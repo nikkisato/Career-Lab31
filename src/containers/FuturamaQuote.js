@@ -1,27 +1,29 @@
 import React, { Component } from 'react';
-import Quote from '../components/Quote/Quote';
+import Quotes from '../components/Quote/Quotes';
 import { getQuotes } from '../services/futuramaApi';
 
 export default class FuturamaQuote extends Component {
   state = {
-    quote: {
-      quote: '',
-      character: '',
-      image: ''
-    }
+    quotes: []
   };
   componentDidMount() {
-    this.fetchQuote();
+    this.fetch();
   }
 
-  fetchQuote = () => {
-    return getQuotes().then(quote => this.setState({ quote }));
+  fetch = () => {
+    return getQuotes().then(quotes => this.setState({ quotes: quotes }));
+  };
+
+  handleClick = event => {
+    event.preventDefault();
+    this.fetchQuote();
   };
 
   render() {
+    const { quotes } = this.state;
     return (
       <>
-        <Quote quote={this.state.quote} />
+        <Quotes quotes={quotes} />
       </>
     );
   }
