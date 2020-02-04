@@ -1,10 +1,10 @@
 import React from 'react';
-import FuturamaQuote from '../containers/FuturamaQuote';
+import FuturamaQuoteFn from '../containers/FuturamaQuote';
 
 export default function App() {
   return (
     <>
-      <FuturamaQuote />
+      <FuturamaQuoteFn />
     </>
   );
 }
