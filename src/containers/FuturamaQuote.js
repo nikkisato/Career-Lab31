@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Quotes from '../components/Quote/Quotes';
 import { getQuotes } from '../services/futuramaApi';
+import Button from '../components/Button/Button';
 
 export default class FuturamaQuote extends Component {
   state = {
@@ -16,7 +17,7 @@ export default class FuturamaQuote extends Component {
 
   handleClick = event => {
     event.preventDefault();
-    this.fetchQuote();
+    this.fetch();
   };
 
   render() {
@@ -24,6 +25,7 @@ export default class FuturamaQuote extends Component {
     return (
       <>
         <Quotes quotes={quotes} />
+        <Button text="Get a new one"  onClick={this.fetch} />
       </>
     );
   }
