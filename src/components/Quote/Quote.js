@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Quote = ({ quote, character, image }) => (
+const Quote = ({ quote }) => (
   <section>
-    <h2>{character}</h2>
-    <img src={image} />
-    <p>{quote}</p>
+    <h2>{quote.character}</h2>
+    <img src={quote.image} />
+    <p>{quote.quote}</p>
   </section>
 );
 

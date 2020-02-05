@@ -1,8 +1,6 @@
 import React from 'react';
-import { useQuotes } from '../../hooks/quoteHook';
 
-const Button = () => {
-  const { handleClick } = useQuotes();
+const Button = ({ handleClick }) => {
   return <button onClick={() => handleClick()}>new one</button>;
 };
 

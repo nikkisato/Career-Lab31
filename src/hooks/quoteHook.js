@@ -9,12 +9,15 @@ export const useQuotes = () => {
   }, []);
 
   const fetchQuotes = () => {
+    event.preventDefault();
     getQuotes().then(quotes => {
       setQuotesHook(quotes);
     });
   };
 
   const handleClick = () => {
+    event.preventDefault();
+console.log('hi');
     fetchQuotes();
   };
 

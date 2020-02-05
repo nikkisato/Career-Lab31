@@ -1,5 +1,5 @@
 import React from 'react';
-import Quote from './Quote';
+import Quote from './Quotes';
 import { useQuotes } from '../../hooks/quoteHook';
 
 const Quotes = () => {
