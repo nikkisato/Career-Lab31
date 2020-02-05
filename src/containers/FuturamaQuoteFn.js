@@ -5,13 +5,15 @@ import { useQuotes } from '../hooks/quoteHook';
 import styles from '../containers/FuturamaQuoteFn.css';
 import Input from '../components/Input';
 
-const FuturamaQuoteFn = () => {
-  const { quotes, handleClick } = useQuotes();
 
+const FuturamaQuoteFn = () => {
+  const { quotes, handleClick, handleCharacterClick } = useQuotes();
+
+  
   return (
     <>
       <div className={styles.contain}>
-        <Input />
+        <Input handleClick={handleCharacterClick}/>
         <Quotes quotes={quotes} />
         <Button handleClick={handleClick} />
       </div>

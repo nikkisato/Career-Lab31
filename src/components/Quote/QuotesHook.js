@@ -11,11 +11,7 @@ const Quotes = () => {
     </li>
   ));
 
-  return 
-  
-  
-  
-  <ul>{quoteElements}</ul>;
+  return <ul>{quoteElements}</ul>;
 };
 
 export default Quotes;

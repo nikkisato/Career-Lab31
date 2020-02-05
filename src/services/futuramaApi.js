@@ -4,9 +4,11 @@ export const getQuotes = () => {
   );
 };
 
-export const getQuotesCharacter = value => {
+export const getQuotesCharacter = character => {
   return fetch(
-    `http://futuramaapi.herokuapp.com/api/characters/${value}`
+    console.log(
+      'hi'
+    )`http://futuramaapi.herokuapp.com/api/characters/${character}`
   ).then(res => res.json());
 };
 

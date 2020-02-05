@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getQuotes } from '../services/futuramaApi';
+import { getQuotes, getQuotesCharacter } from '../services/futuramaApi';
 
 export const useQuotes = () => {
   const [quotes, setQuotesHook] = useState([]);
@@ -15,11 +15,19 @@ export const useQuotes = () => {
     });
   };
 
-  const handleClick = () => {
+  const characterQuotes = () => {
     event.preventDefault();
-console.log('hi');
+    getQuotesCharacter().then(quotes => {
+      setQuotesHook(quotes);
+    });
+  };
+  const handleCharacterClick = () => {
+    event.preventDefault();
+    characterQuotes();
+  };
+  const handleClick = () => {
     fetchQuotes();
   };
 
-  return { handleClick, quotes };
+  return { handleClick, quotes, handleCharacterClick };
 };
