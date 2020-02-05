@@ -4,7 +4,7 @@ import styles from './Quote.css';
 
 const Quote = ({ quote }) => (
   <section>
-    <img className={styles.image}src={quote.image} />
+    <img className={styles.image} src={quote.image} />
     <h2>{quote.character}</h2>
 
     <p>{quote.quote}</p>
