@@ -1,11 +1,12 @@
 import React from 'react';
 import Quote from './Quote';
 import PropTypes from 'prop-types';
+import styles from './Quote.css';
 
 const Quotes = ({ quotes }) => {
   console.log('!!!!!', quotes);
   const quoteElements = quotes.map(quote => (
-    <li key={quote.quote}>
+    <li className={styles.div} key={quote.quote}>
       <Quote quote={quote} />
     </li>
   ));
