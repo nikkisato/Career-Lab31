@@ -14,7 +14,13 @@ const Quotes = ({ quotes }) => {
 };
 
 Quotes.propTypes = {
-  quotes: PropTypes.array.isRequired
+  quotes: PropTypes.arrayOf(
+    PropTypes.shape({
+      quote: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired
+    })
+  ).isRequired
 };
 
 export default Quotes;

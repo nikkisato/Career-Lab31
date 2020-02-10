@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Selection from './Menu/Selection';
+import Selection from './Selection';
 
 const characters = [
   { value: 'bender', name: 'Bender' },
@@ -20,20 +20,18 @@ const characters = [
   { value: 'kif', name: 'Kif' }
 ];
 
-
-
-const CharacterMenu = ({ onChange, onClick,  }) => (
+const CharacterMenu = ({ onChange, onClick }) => (
   <>
     <select onChange={onChange}>
-      <Selection options={characters}/>
+      <Selection options={characters} />
     </select>
-    <button onClick={onClick}>Get Qoute</button>
+    <button onClick={onClick}>Get Quote</button>
   </>
 );
 
 CharacterMenu.propTypes = {
   onChange: PropTypes.func.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 export default CharacterMenu;
