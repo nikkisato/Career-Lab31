@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterMenu component renders CharacterMenu 1`] = `
+<Fragment>
+  <select>
+    <Selection
+      options={
+        Array [
+          Object {
+            "name": "Bender",
+            "value": "bender",
+          },
+          Object {
+            "name": "Fry",
+            "value": "fry",
+          },
+          Object {
+            "name": "Leela",
+            "value": "leela",
+          },
+          Object {
+            "name": "Professor Farnsworth",
+            "value": "professor-farnsworth",
+          },
+          Object {
+            "name": "Amy",
+            "value": "amy",
+          },
+          Object {
+            "name": "Zapp-Brannigan",
+            "value": "zapp-brannigan",
+          },
+          Object {
+            "name": "Lurr",
+            "value": "lurr",
+          },
+          Object {
+            "name": "Dr Zoidberg",
+            "value": "dr-zoidberg",
+          },
+          Object {
+            "name": "Bob Barker",
+            "value": "bob-barker",
+          },
+          Object {
+            "name": "Hermes",
+            "value": "hermes",
+          },
+          Object {
+            "name": "Morgan Proctor",
+            "value": "morgan-proctor",
+          },
+          Object {
+            "name": "Mom",
+            "value": "mom",
+          },
+          Object {
+            "name": "Robot-Mob",
+            "value": "robot-mob",
+          },
+          Object {
+            "name": "Giant Bender",
+            "value": "giant-bender",
+          },
+          Object {
+            "name": "Kif",
+            "value": "kif",
+          },
+        ]
+      }
+    />
+  </select>
+  <button>
+    Get Quote
+  </button>
+</Fragment>
+`;

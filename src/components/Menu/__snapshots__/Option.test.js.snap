@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Option component renders Option 1`] = `
+<Fragment>
+  <option />
+</Fragment>
+`;
